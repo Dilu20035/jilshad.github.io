@@ -22,4 +22,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.body.style.zoom = "150%"; // Adjust the percentage as per your requirement
