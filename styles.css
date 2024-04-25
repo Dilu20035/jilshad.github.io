@@ -19,7 +19,7 @@
 
 
 body {
-    zoom: 100%; /* Adjust the value as needed */
+    zoom: 90%; /* Adjust the value as needed */
     margin: 0;
     font-family: 'Neue Montreal','roc-grotesk', Arial, sans-serif;
     scroll-behavior: smooth;
