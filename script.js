@@ -21,3 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = mailtoUrl;
     });
 });
+
+document.body.style.zoom = "150%"; // Adjust the percentage as per your requirement
