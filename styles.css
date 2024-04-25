@@ -19,7 +19,6 @@
 
 
 body {
-    zoom: 95%; /* Adjust the value as needed */
     margin: 0;
     font-family: 'Neue Montreal','roc-grotesk', Arial, sans-serif;
     scroll-behavior: smooth;
