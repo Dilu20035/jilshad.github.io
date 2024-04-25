@@ -1,0 +1,932 @@
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('font/NeueMontreal-Bold.otf') format('woff2'), /* format for modern browsers */
+         url('font/NeueMontreal-Bold.otf') format('woff'); /* format for older browsers */
+    /* Add more src lines if you have other font file formats */
+    font-style: normal; /* Adjust font style if needed */
+}
+@font-face {
+    font-family: 'roc-grotesk';
+    src: url('font/Fontspring-DEMO-rocgrotesk-light.otf') format('woff2'), /* format for modern browsers */
+         url('font/Fontspring-DEMO-rocgrotesk-light.otf') format('woff'); /* format for older browsers */
+    /* Add more src lines if you have other font file formats */
+    font-style: normal; /* Adjust font style if needed */
+}
+
+/* External CSS file (styles.css) */
+
+/* home page */
+
+body {
+    margin: 0;
+    font-family: 'Neue Montreal','roc-grotesk', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    font-family: 'roc-grotesk';
+    display: block;
+    background-color: #fed43a;
+    width: 115px; /* Adjust the width as needed */
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    padding-top: 1.5rem;
+}
+
+/* Styles for text items */
+.text-items {
+    padding: 10px;
+}
+
+.text-items a {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transform: rotate(-90deg);
+    line-height: 130px;
+}
+
+
+/* Styles for icon items */
+.icon-items {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.icon-items a {
+    font-family: 'roc-grotesk';
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.icon-items a i {
+    font-size: 24px; /* Adjust the icon size as needed */
+}
+
+
+
+.home {
+    margin-left: 115px; /* Adjust margin to avoid content overlapping with navbar */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 0px; /* Gap between grid items */
+    padding: 0px;
+}
+.content1{
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #121212;
+    text-align: left;
+    align-content: center;
+    padding-left: 4rem;
+}
+.content2{
+    color: #fff;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #fed43a;
+    text-align: center;
+    align-content: center;
+}
+.content2 img{
+    width: 550px;
+    height: 380px;  
+    animation: bounce 2s infinite alternate;
+    transform-origin: center;
+}
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+.content1 h1{
+    color: #fff;
+    transition: all .2s;
+    line-height: 0%;
+    font-size: 8.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+.content1 h1:hover{
+    color: #fed43a;
+    transform: translateX(20px);
+}
+.content1 h2{
+    line-height: 0%;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+    font-size: 90px;
+    padding-bottom: 10px;
+    font-family: 'Neue Montreal';
+    transition: all .2s;
+}
+.content1 h3{
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+    font-size: 4vw;
+    padding-right: 100px;
+    line-height: 0.8;
+    font-family: 'Neue Montreal';
+    transition: all .2s;
+    margin-top: -25px;
+    margin-bottom: 0;
+}
+.content1 h4{
+    color: #E9E9E9;
+    font-size: 30px;
+    line-height: 1.2;
+    padding-right: 130px;
+    font-family: sans-serif;
+    transition: all .2s;
+    margin-bottom: 80px;
+    font-weight: 500;
+}
+.content1 a{
+    text-decoration: none;
+    color: #121212;
+}
+.content2 a{
+    text-decoration: none;
+    color: #121212;
+}
+#btn{
+    position: relative;
+    font-family: sans-serif;
+    color: #121212;
+    background-color: #fed43a;
+    width: 15rem;
+    height: 3rem;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .2s;
+    transition: transform 0.3s ease;
+}
+#btn:hover{
+    transform: translateY(-5px);
+}
+
+#btn1{
+    top: 73px;
+    left: 35%;
+    position: relative;
+    font-family: sans-serif;
+    color: #121212;
+    background-color: #6c48c2;
+    width: 15rem;
+    height: 3rem;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .2s;
+    transition: transform 0.3s ease;
+}
+#btn1:hover{
+    transform: translateY(-5px);
+}
+
+
+/* working page */
+
+.work {
+    margin-left: 130px; /* Adjust margin to avoid content overlapping with navbar */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 0px; /* Gap between grid items */
+    padding: 0px;
+}
+.content3{
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #121212;
+    text-align: left;
+    align-content: center;
+    padding-left: 50px;
+    line-height: 0%;
+}
+.content4{
+    color: #fff;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #fed43a;
+    text-align: center;
+    align-content: center;
+}
+
+.content3 h1{
+    color: #fff;
+    font-size: 6rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: center;
+    margin-bottom: 15rem;
+    margin-top: 14rem;
+    padding-right: 3rem;
+    transition: transform 0.3s ease-in-out;
+}
+.content3 h1:hover{
+    color: #fed43a;
+    transform: translateY(-20px);
+}
+.content3 p{
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: left;
+    margin-bottom: 6rem;
+}
+.box{
+    width: 50%;
+    height: 500px;
+    background-color: none;
+    border-left: 1px solid #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.content3 h4{
+    color: #ffffffdc;
+    font-size: 1.5rem;
+    font-family: 'Neue Montreal-Light';
+    position: relative;
+    text-align: left;
+    padding-left: 6rem;
+}
+
+.box p{
+    margin-top: 0rem;
+    color: #ffffff81;
+    line-height: 1;
+    font-size: 25px;
+    font-family: 'Neue Montreal-Light';
+    min-width: 600px;
+    font-weight: 100;
+    padding-left: 3rem;
+}
+.box-in{
+    width: 400px;
+    height: 60px;
+    background-color: none;
+    border-top: 2.5px solid #fff;
+    border-bottom: 2.5px solid #fff;
+    margin-left: 3rem;
+    margin-top: 16rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.box-in p{
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    padding: 1.1rem;
+    font-size: 1.3rem;
+    left: 0;
+    margin-left: -10rem;
+}
+.content3 a{
+    text-decoration: none;
+    color: #121212;
+}
+#btn-work{
+    position: relative;
+    font-family: sans-serif;
+    color: #121212;
+    font-weight: 100;
+    background-color: #fed43a;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    transition: all .2s;
+    transition: transform 0.3s ease;
+    margin-left: 5.5rem;
+    margin-top: -7rem;
+    width: 15rem;
+    height: 4.5rem;
+}
+#btn-work:hover{
+    transform: translateY(-5px);
+}
+
+.content4 img{
+    width: 600px;
+    height: 300px;
+    margin-bottom: -40%;
+    border-radius: 1rem;
+    border: 1rem solid #ffffff83;
+}
+
+/* working page 2 */
+
+.work2 {
+    margin-left: 130px; /* Adjust margin to avoid content overlapping with navbar */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 0px; /* Gap between grid items */
+    padding: 0px;
+}
+.content5{
+    padding-top: 5rem;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #121212;
+    text-align: left;
+    align-content: center;
+    padding-left: 50px;
+    line-height: 0%;
+}
+.content55{
+    padding-top: 5rem;
+    color: #fff;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #fed43a;
+    text-align: center;
+    align-content: center;
+}
+
+.content5 p{
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: left;
+    margin-bottom: 6rem;
+}
+.box1{
+    width: 50%;
+    height: 500px;
+    background-color: none;
+    border-left: 1px solid #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.content5 h4{
+    color: #ffffffdc;
+    font-size: 1.5rem;
+    font-family: 'Neue Montreal-Light';
+    position: relative;
+    text-align: left;
+    padding-left: 6rem;
+}
+
+.box1 p{
+    margin-top: 0rem;
+    color: #ffffff81;
+    line-height: 1;
+    font-size: 25px;
+    font-family: 'Neue Montreal-Light';
+    min-width: 600px;
+    font-weight: 100;
+    padding-left: 3rem;
+}
+.box-in1{
+    width: 400px;
+    height: 60px;
+    background-color: none;
+    border-top: 2.5px solid #fff;
+    border-bottom: 2.5px solid #fff;
+    margin-left: 3rem;
+    margin-top: 16rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.box-in1 p{
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    padding: 1.1rem;
+    font-size: 1.3rem;
+    left: 0;
+    margin-left: -7rem;
+}
+.content5 a{
+    text-decoration: none;
+    color: #121212;
+}
+#btn-work1{
+    position: relative;
+    font-family: sans-serif;
+    color: #121212;
+    font-weight: 100;
+    background-color: #fed43a;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    transition: all .2s;
+    transition: transform 0.3s ease;
+    margin-left: 5.5rem;
+    margin-top: -7rem;
+    width: 15rem;
+    height: 4.5rem;
+}
+#btn-work1:hover{
+    transform: translateY(-5px);
+}
+
+.content55 img{
+    width: 600px;
+    height: 300px;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1rem solid #ffffff83;
+}
+
+/* My Skills */
+
+
+.content6{
+    padding-top: 5rem;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #121212;
+    text-align: left;
+    align-content: center;
+    padding-left: 50px;
+    line-height: 0%;
+}
+.content66{
+    padding-top: 5rem;
+    color: #fff;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #fed43a;
+    text-align: center;
+    align-content: center;
+}
+.content6 h1{
+    color: #fff;
+    font-size: 6rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: center;
+    margin-bottom: 15rem;
+    margin-top: 14rem;
+    padding-right: 3rem;
+    transition: transform 0.3s ease-in-out;
+}
+.content6 h1:hover{
+    color: #fed43a;
+    transform: translateY(-20px);
+}
+
+.content6 img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-left: 40%;
+}
+
+.content6 h3{
+    color: #fed43a;
+    font-size: 2rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: center;
+}
+.content6 p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Neue Montreal-Light';
+    position: relative;
+    text-align: center;
+    line-height: 1;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content66 img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-right: 0%;
+}
+
+.content66 h3{
+    color: #000000;
+    font-size: 2rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: center;
+    line-height: 0%;
+}
+.content66 p{
+    color: #000000;
+    font-size: 1.5rem;
+    font-family: 'Neue Montreal-Light';
+    position: relative;
+    text-align: center;
+    line-height: 1;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+
+
+
+.content6 img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-left: 40%;
+}
+
+.content6 h3{
+    color: #fed43a;
+    font-size: 2rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: center;
+}
+.content6 p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Neue Montreal-Light';
+    position: relative;
+    text-align: center;
+    line-height: 1;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content66 img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-right: 0%;
+}
+
+.content66 h3{
+    color: #000000;
+    font-size: 2rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: center;
+    line-height: 0%;
+}
+.content66 p{
+    color: #000000;
+    font-size: 1.5rem;
+    font-family: 'Neue Montreal-Light';
+    position: relative;
+    text-align: center;
+    line-height: 1;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.l1, .l2, .l3, .l4, .l5, .l6{
+    padding-bottom: 10rem;
+}
+.l4{
+    padding-top: 28rem;
+}
+.l5{
+    padding-top: 1rem;
+}
+
+
+
+
+/* My Tools that I used */
+
+
+
+.content7{
+    padding-top: 5rem;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #121212;
+    text-align: left;
+    align-content: center;
+    padding-left: 50px;
+    line-height: 0%;
+}
+.content77{
+    padding-top: 5rem;
+    color: #fff;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #fed43a;
+    text-align: center;
+    align-content: center;
+}
+.content7 h1{
+    color: #fff;
+    font-size: 6rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: center;
+    padding-right: 3rem;
+    transition: transform 0.3s ease-in-out;
+}
+.content7 h1:hover{
+    color: #fed43a;
+    transform: translateY(-20px);
+}
+
+.bigbox{
+    min-width: 100%;
+    height: 40rem;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 20rem;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    visibility: hidden;
+}
+.bigbox1{
+    min-width: 100%;
+    height: 45rem;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid #fed43a;
+    border-radius: 1rem;
+    padding: 20px;
+    margin-left: -48rem;
+    margin-top: 10rem;
+}
+
+.bx-fi1{
+    display: flex;
+    margin-top: 0.6rem;
+}
+.bx-ho1 {
+    display: block;
+    margin-right: 9rem;
+    margin-left: 8rem;
+}
+.bx-ho2 {
+    display: block;
+    margin-right: 9rem;
+}
+.bx1{
+    box-shadow: 0 0 10px #fed43a;
+    background-color: #fed43a;
+    width: 12rem;
+    height: 17rem;
+    border: 1px solid #fed43a;
+    border-radius: 10px;
+    margin-top: 2.4rem;
+    margin-bottom: 5rem;
+}
+.bx1 p{
+    font-family: 'Neue Montreal';
+    line-height: 1.1;
+    color: #000000;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#bx11{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.bx11{
+    display: flex;
+}
+#bx12 img{
+    width: 50px;
+    height: 40px;
+}
+
+#bx1{
+    display: flex;
+    font-size: 25px;
+    padding-left: 25px;
+    color: #000000;
+}
+#bx1 p{
+    padding-left: 10px;
+    font-size: 30px;
+}
+#bx2{
+    display: flex;
+    font-size: 5px;
+    padding-left: 25px;
+    color: #000000;
+}
+#bx2 img{
+    margin-top: 25px;
+    width: 50px;
+    height: 40px;
+}
+#bx2 p{
+    padding-left: 10px;
+    font-size: 20px;
+    margin-top: 35px;
+}
+#bx3{
+    display: flex;
+    font-size: 5px;
+    padding-left: 25px;
+    color: #000000;
+}
+#bx3 img{
+    margin-top: 25px;
+    width: 50px;
+    height: 40px;
+}
+#bx3 p{
+    padding-left: 5px;
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+.content8{
+    padding-top: 5rem;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #121212;
+    text-align: left;
+    align-content: center;
+    padding-left: 50px;
+    line-height: 0%;
+}
+.content88{
+    padding-top: 5rem;
+    color: #fff;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #fed43a;
+    text-align: center;
+    align-content: center;
+}
+.content8 h1{
+    color: #fed43a;
+    font-size: 8rem;
+    font-family: 'Neue Montreal';
+    position: relative;
+    text-align: center;
+    padding-right: 3rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.smallbox{
+    min-width: 50%;
+    height: 40rem;
+    background-color: none;
+    border-radius: 1rem;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 20rem;
+    visibility: hidden;
+}
+.smallbox1{
+    max-width: 80%;
+    height: 20rem;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid #fed43a;
+    border-radius: 1rem;
+    padding: 20px;
+    margin-left: -20rem;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+}
+
+.smallbox1 p{
+    width: 100%;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Neue Montreal-light';
+}
+.smallbox1 h1{
+    font-size: 7.5rem;
+    margin-top: -2rem;
+    animation: bounce 1.5s infinite alternate;
+}
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+/* Contact Page */
+
+.home2{
+    min-width: 100vh;
+    min-height: 100vh;
+    background-color: #fed43a;
+    margin-top: -3rem;
+    padding-bottom: 10rem;
+}
+.home2 h3{
+    padding-top: 10rem;
+    font-size: 2.5rem;
+    padding-left: 10rem;
+    text-align: center;
+}
+
+.letbox{
+    max-width: 800px;
+    height: 40rem;
+    background-color: #1d1d1d;
+    border: 1rem solid #ffffff;
+    border-radius: 1rem;
+    padding: 20px;
+    margin-top: 5rem;
+    margin-left: 30%;
+
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: lighter;
+    font-family: 'Neue Montreal-light';
+    color: #fff;
+    padding-bottom: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background-color: #353535;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #636363;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 622px;
+    background-color: #fed43a;
+    color: black;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #6c48c2;
+    color: white;
+}
+
+
+/* footer creation */
+
+footer{
+    min-width: 100vh;
+    height: 20vh;
+    background-color: #fed43a;
+    border-top: 0.3px solid black;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 10rem;
+    font-family: 'Neue Montreal-light';
+}
