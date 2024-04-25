@@ -16,6 +16,9 @@
 /* External CSS file (styles.css) */
 
 /* home page */
+html {
+    zoom: 150%; /* Adjust the percentage as per your requirement */
+}
 
 body {
     margin: 0;
