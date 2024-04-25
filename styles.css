@@ -19,13 +19,7 @@
 
 
 body {
-    zoom: 110%; /* Adjust the value as needed */
-    -moz-transform: scale(1); /* Firefox */
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(1); /* Opera */
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(1); /* Safari and Chrome */
-    -webkit-transform-origin: 0 0;
+    zoom: 90%; /* Adjust the value as needed */
     margin: 0;
     font-family: 'Neue Montreal','roc-grotesk', Arial, sans-serif;
     scroll-behavior: smooth;
