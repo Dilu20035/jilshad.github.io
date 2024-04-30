@@ -28,7 +28,7 @@ body {
     font-family: 'roc-grotesk';
     display: block;
     background-color: #fed43a;
-    width: 115px; /* Adjust the width as needed */
+    width: 6%; /* Adjust the width as needed */
     height: 100%;
     z-index: 1000;
     position: fixed;
@@ -76,14 +76,14 @@ body {
 
 
 .home {
-    margin-left: 115px; /* Adjust margin to avoid content overlapping with navbar */
+    margin-left: 6%;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     grid-gap: 0px; /* Gap between grid items */
     padding: 0px;
 }
 .content1{
-    max-width: 100vh;
+    min-width: 95%;
     min-height: 100vh;
     background-color: #121212;
     text-align: left;
@@ -92,7 +92,7 @@ body {
 }
 .content2{
     color: #fff;
-    max-width: 100vh;
+    min-width: 95%;
     min-height: 100vh;
     background-color: #fed43a;
     text-align: center;
@@ -214,14 +214,14 @@ body {
 /* working page */
 
 .work {
-    margin-left: 130px; /* Adjust margin to avoid content overlapping with navbar */
+    margin-left: 6%; /* Adjust margin to avoid content overlapping with navbar */
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     grid-gap: 0px; /* Gap between grid items */
     padding: 0px;
 }
 .content3{
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #121212;
     text-align: left;
@@ -231,7 +231,7 @@ body {
 }
 .content4{
     color: #fff;
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #fed43a;
     text-align: center;
@@ -345,7 +345,7 @@ body {
 /* working page 2 */
 
 .work2 {
-    margin-left: 130px; /* Adjust margin to avoid content overlapping with navbar */
+    margin-left: 6%; /* Adjust margin to avoid content overlapping with navbar */
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     grid-gap: 0px; /* Gap between grid items */
@@ -353,7 +353,7 @@ body {
 }
 .content5{
     padding-top: 5rem;
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #121212;
     text-align: left;
@@ -364,7 +364,7 @@ body {
 .content55{
     padding-top: 5rem;
     color: #fff;
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #fed43a;
     text-align: center;
@@ -465,7 +465,7 @@ body {
 
 .content6{
     padding-top: 5rem;
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #121212;
     text-align: left;
@@ -476,7 +476,7 @@ body {
 .content66{
     padding-top: 5rem;
     color: #fff;
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #fed43a;
     text-align: center;
@@ -623,7 +623,7 @@ body {
 
 .content7{
     padding-top: 5rem;
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #121212;
     text-align: left;
@@ -634,7 +634,7 @@ body {
 .content77{
     padding-top: 5rem;
     color: #fff;
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #fed43a;
     text-align: center;
@@ -764,7 +764,7 @@ body {
 
 .content8{
     padding-top: 5rem;
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #121212;
     text-align: left;
@@ -775,7 +775,7 @@ body {
 .content88{
     padding-top: 5rem;
     color: #fff;
-    max-width: 100vh;
+    min-width: 97%;
     min-height: 100vh;
     background-color: #fed43a;
     text-align: center;
@@ -837,7 +837,8 @@ body {
 /* Contact Page */
 
 .home2{
-    min-width: 100vh;
+    margin-left: 6%;
+    max-width: 97%;
     min-height: 100vh;
     background-color: #fed43a;
     margin-top: -3rem;
