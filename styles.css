@@ -189,7 +189,7 @@ body {
 }
 
 #btn1{
-    top: 73px;
+    top: 57px;
     left: 35%;
     position: relative;
     font-family: sans-serif;
@@ -837,8 +837,7 @@ body {
 /* Contact Page */
 
 .home2{
-    margin-left: 6%;
-    max-width: 97%;
+    min-width: 100%;
     min-height: 100vh;
     background-color: #fed43a;
     margin-top: -3rem;
@@ -920,14 +919,14 @@ button[type="submit"]:hover {
 
 footer{
     min-width: 100vh;
-    height: 20vh;
+    height: 15vh;
     background-color: #fed43a;
     border-top: 0.3px solid black;
 }
 
 footer p{
     text-align: center;
-    margin-top: 8%;
+    margin-top: 5.5rem;
     margin-left: 10rem;
     font-family: 'Neue Montreal-light';
 }
